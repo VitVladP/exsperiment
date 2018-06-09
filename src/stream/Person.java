@@ -3,10 +3,12 @@ package stream;
 public class Person {
      String name;
      int age;
+     String descr;
 
-    public Person(String name, int age) {
+    public Person(String name, int age, String descr) {
         this.name = name;
         this.age = age;
+        this.descr = descr;
     }
 
     public String getName() {
@@ -19,6 +21,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return String.format("name : %s",name,age);
+        return String.format("name : %s, age: %d",name,age);
     }
 }

@@ -1,4 +1,4 @@
-package com.generic;
+package old.generic;
 
 public class Gen <T> {
     private T obj;

@@ -8,12 +8,12 @@ public class Main {
     public static void main(String[] args) {
 
         List<Person> persons = Arrays.asList(
-                new Person("Vet", 25),
-                new Person("Surfer", 25),
-                new Person("Surfer", 28),
-                new Person("Dude", 34),
-                new Person("Derek", 34),
-                new Person("Bro", 20)
+                new Person("Vet", 25, "20"),
+                new Person("Surfer", 25, "50"),
+                new Person("Surfer", 28, "wow wow"),
+                new Person("Dude", 34, "fuck"),
+                new Person("Derek", 34, "demos"),
+                new Person("Bro", 20, "gooooo")
         );
 
         List<Person> filt =
@@ -34,8 +34,8 @@ public class Main {
         String joining =
                 persons
                         .stream()
-                        .filter(person -> person.age >= 25)
-                        .map(person -> person.name)
+                        .filter(person -> person.age >= 26)
+                        .map(person -> String.valueOf(person.age))
                         .collect(Collectors.joining(" and ", "In Greman ", " competition"));
 
         System.out.println(joining);
@@ -54,7 +54,7 @@ public class Main {
         List<Foo> foos = new ArrayList<>();
 
         IntStream
-                .range(3, 5)
+                .range(2, 5)
                 .forEach(i -> foos.add(new Foo("Foo" + i)));
 
     }

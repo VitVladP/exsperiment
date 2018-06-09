@@ -1,4 +1,4 @@
-package com.equalsAnDhash;
+package old.equalsAnDhash;
 
 public class TestEquals {
     private static int param = 0;

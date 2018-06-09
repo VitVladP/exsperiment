@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-          //workWithList();
-        //  workwithSeparator();
-       // workHashMap();
+          workWithList();
+          workwithSeparator();
+        workHashMap();
         wlinkedList();
     }
 
@@ -33,7 +33,7 @@ public class Main {
         soutlist(list);
 
         Collections.shuffle(list);
-        int count = Collections.frequency(list, new Integer(3));
+        int count = Collections.frequency(list, 3);
         System.out.println(count);
     }
     public static void soutlist (LinkedList<Integer> list){
@@ -72,7 +72,7 @@ public class Main {
         Spliterator<Double> split = list.spliterator();
 
 
-        while (split.tryAdvance((n)->System.out.println(n))) {
+        while (split.tryAdvance(System.out::println)) {
             System.out.println();
         }
 

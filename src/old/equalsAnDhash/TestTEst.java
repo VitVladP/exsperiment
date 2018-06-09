@@ -1,4 +1,4 @@
-package com.equalsAnDhash;
+package old.equalsAnDhash;
 
 public class TestTEst {
     String name;

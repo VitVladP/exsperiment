@@ -19,7 +19,7 @@ public class Main {
         arrList.add("Surfer");
         arrList.add("Dude");
         arrList.add("еще кто-то");
-        //arrList.add(null);
+        arrList.add(null);
         arrList.add("Start");
         System.out.println(arrList.size());
         mySet.addAll(arrList);
