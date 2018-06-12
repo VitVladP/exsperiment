@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/out_main.iml" filepath="$PROJECT_DIR$/.idea/modules/out_main.iml" group="out" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/out_test.iml" filepath="$PROJECT_DIR$/.idea/modules/out_test.iml" group="out" />
       <module fileurl="file://$PROJECT_DIR$/someExsperiments.iml" filepath="$PROJECT_DIR$/someExsperiments.iml" />
-      <module fileurl="file://$PROJECT_DIR$/out/testmodule.iml" filepath="$PROJECT_DIR$/out/testmodule.iml" />
     </modules>
   </component>
 </project>

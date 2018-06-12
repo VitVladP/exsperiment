@@ -1,4 +1,4 @@
-package singletone;
+package old.singletone;
 
 public class Main {
     public static void main(String[] args) {
