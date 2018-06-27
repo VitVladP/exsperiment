@@ -17,13 +17,13 @@ public class ModernCreator implements Factory {
         return new ModernChair();
     }
 
-    public Sofa getSofa(String color, boolean transform){
-        return new ModernSofa(color, transform);
-    }
-
-    public Chair getChair(String color){
-        return new ModernChair(color);
-    }
+//    public Sofa getSofa(String color, boolean transform){
+//        return new ModernSofa(color, transform);
+//    }
+//
+//    public Chair getChair(String color){
+//        return new ModernChair(color);
+//    }
 
 
 }

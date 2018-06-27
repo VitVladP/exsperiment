@@ -17,13 +17,13 @@ public class LoftCreator implements Factory {
         return new LoftChair();
     }
 
-    public Sofa getSofa(String color, boolean transform){
-        return new LoftSofa(color, transform);
-    }
-
-    public Chair getChair(String color){
-        return new LoftChair(color);
-    }
+//    public Sofa getSofa(String color, boolean transform){
+//        return new LoftSofa(color, transform);
+//    }
+//
+//    public Chair getChair(String color){
+//        return new LoftChair(color);
+//    }
 
 
 }

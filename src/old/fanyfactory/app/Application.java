@@ -25,8 +25,6 @@ public class Application {
         map.put(Style.MODERN, new ModernCreator());
     }
     public Application(String style) {
-
-
        Factory  factory =  map.get(Style.valueOf(style));
         chair = factory.getChair();
         sofa =  factory.getSofa();

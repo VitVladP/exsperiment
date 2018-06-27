@@ -1,4 +1,4 @@
-package tests;
+package old.tests;
 
 public class SomeClassB extends SomeClassA {
     static String test = "from B";

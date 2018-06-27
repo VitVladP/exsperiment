@@ -1,4 +1,4 @@
-package tests;
+package old.tests;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -9,7 +9,7 @@ public class LoftChair implements Chair {
    public LoftChair(String color){
         this.color = color;
     }
-    public LoftChair(){
+   public LoftChair(){
         this("Black");
     }
 

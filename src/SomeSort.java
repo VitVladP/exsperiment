@@ -11,9 +11,10 @@ public class SomeSort {
 //        insert(arr);
         System.out.println
                 (Arrays.toString(arr));
-        merge(arr,0, (int)(arr.length / 2), arr.length - 1);
+        sort(arr);
         System.out.println
                 (Arrays.toString(arr));
+        System.out.println(reverseString("Some fucking test"));
     }
 
     private static void sortChoose(Comparable[] arr){
@@ -60,17 +61,34 @@ public class SomeSort {
     }
 
     public static void merge (Comparable[] arr, int lo, int mid,int hi) {
-       aux = new Comparable[arr.length];
+//       aux = new Comparable[arr.length];
         int i = lo, j= mid+1;
         for (int k = lo; k <= hi; k++)
-            aux[k] = arr[k];
+        aux[k] = arr[k];
         for(int k = lo; k <= hi; k++)
             if ( i > mid)  arr[k] = aux[j++];
             else if (j > hi ) arr[k] = aux[i++];
             else if (less(aux[j],aux[i])) arr[k] = aux[j++];
             else arr[k] = aux[i++];
-        System.out.println("demo");
      }
 
+    public static void sort(Comparable[] arr) {
+        aux = new Comparable[arr.length];
+        sort(arr,0, arr.length-1);
 
+
+    }
+    public static void sort(Comparable[] arr,int lo,int hi){
+        if(hi<=lo) return;
+        int mid = lo+(hi-lo)/2;
+        sort(arr,lo,mid);
+        sort(arr,mid+1,hi);
+        merge(arr,lo,mid,hi);
+
+    }
+
+    public static String reverseString (String str){
+        if (str.length() < 2) return str;
+        return reverseString(str.substring(str.length()/2)) + reverseString(str.substring(0,str.length()/2));
+    }
 }

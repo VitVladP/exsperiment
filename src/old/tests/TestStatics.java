@@ -1,4 +1,4 @@
-package tests;
+package old.tests;
 
 import com.ThreeCollections.ClassA;
 

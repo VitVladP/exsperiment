@@ -21,10 +21,10 @@ public class Krasaycheg {
 
         String[] test = text.split("");
 
-        for (String st : test
-                ) {
-            System.out.println(st);
-        }
+//        for (String st : test
+//                ) {
+//            System.out.println(st);
+//        }
 
     }
 }

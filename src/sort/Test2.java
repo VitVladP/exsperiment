@@ -13,6 +13,8 @@ public class Test2 {
             System.out.println(reversByMerge(s));
         } catch (IOException e) {
             e.printStackTrace();
+
+
         }
     }
 

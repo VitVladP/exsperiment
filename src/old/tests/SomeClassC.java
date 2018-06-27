@@ -1,4 +1,4 @@
-package tests;
+package old.tests;
 
 public class SomeClassC implements SomeClassB.HelloWorld {
 

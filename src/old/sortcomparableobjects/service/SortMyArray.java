@@ -16,7 +16,7 @@ public class SortMyArray {
         map.put(SortBy.DESC, new SortFactoryDESC<>());
         map.put(SortBy.RANDOM, new SortFactoryRandom<>());
 
-        SortInterface sorter = map.get(SortBy.valueOf(sortMethod)).getSort();
+        SortInterface<T> sorter = map.get(SortBy.valueOf(sortMethod)).getSort();
         sorter.sort(array);
     }
 }
